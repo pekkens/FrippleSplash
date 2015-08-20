@@ -40,17 +40,18 @@ class SplashViewController: UIViewController {
         view.addSubview(firstImageView)
         
         imageFadeIn(firstImageView)
+        
     }
     
     func imageFadeIn(imageView: UIImageView) {
         
-        let secondImageView = UIImageView(image: UIImage(named: "frame04.png"))
+        let secondImageView = UIImageView(image: UIImage(named: "frame02.png"))
         secondImageView.frame = view.frame
         secondImageView.alpha = 0.0
         
         view.insertSubview(secondImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.0, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.1, options: .CurveEaseOut, animations: {
             secondImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = secondImageView.image
@@ -58,27 +59,13 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let thirdImageView = UIImageView(image: UIImage(named: "frame09.png"))
-        thirdImageView.frame = view.frame
-        thirdImageView.alpha = 0.0
-        
-        view.insertSubview(thirdImageView, aboveSubview: imageView)
-        
-        UIView.animateWithDuration(0.1, delay: 0.1, options: .CurveEaseOut, animations: {
-            thirdImageView.alpha = 1.0
-            }, completion: {_ in
-                imageView.image = thirdImageView.image
-                thirdImageView.removeFromSuperview()
-                
-        })
-        
-        let fourthImageView = UIImageView(image: UIImage(named: "frame12.png"))
+        let fourthImageView = UIImageView(image: UIImage(named: "frame04.png"))
         fourthImageView.frame = view.frame
         fourthImageView.alpha = 0.0
         
         view.insertSubview(fourthImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.2, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.2, options: .CurveEaseOut, animations: {
             fourthImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = fourthImageView.image
@@ -86,13 +73,13 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let fifthImageView = UIImageView(image: UIImage(named: "frame14.png"))
+        let fifthImageView = UIImageView(image: UIImage(named: "frame05.png"))
         fifthImageView.frame = view.frame
         fifthImageView.alpha = 0.0
         
         view.insertSubview(fifthImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.3, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.3, options: .CurveEaseOut, animations: {
             fifthImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = fifthImageView.image
@@ -100,13 +87,13 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let sixthImageView = UIImageView(image: UIImage(named: "frame16.png"))
+        let sixthImageView = UIImageView(image: UIImage(named: "frame06.png"))
         sixthImageView.frame = view.frame
         sixthImageView.alpha = 0.0
         
         view.insertSubview(sixthImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.4, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.4, options: .CurveEaseOut, animations: {
             sixthImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = sixthImageView.image
@@ -114,13 +101,13 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let seventhImageView = UIImageView(image: UIImage(named: "frame17.png"))
+        let seventhImageView = UIImageView(image: UIImage(named: "frame07.png"))
         seventhImageView.frame = view.frame
         seventhImageView.alpha = 0.0
         
         view.insertSubview(seventhImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.5, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.5, options: .CurveEaseOut, animations: {
             seventhImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = seventhImageView.image
@@ -128,13 +115,13 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let eighthImageView = UIImageView(image: UIImage(named: "frame18.png"))
+        let eighthImageView = UIImageView(image: UIImage(named: "frame08.png"))
         eighthImageView.frame = view.frame
         eighthImageView.alpha = 0.0
         
         view.insertSubview(eighthImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.6, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.0, delay: 0.6, options: .CurveEaseOut, animations: {
             eighthImageView.alpha = 1.0
             }, completion: {_ in
                 imageView.image = eighthImageView.image
@@ -142,27 +129,138 @@ class SplashViewController: UIViewController {
                 
         })
         
-        let ninthImageView = UIImageView(image: UIImage(named: "frame20.png"))
-        ninthImageView.frame = view.frame
-        ninthImageView.alpha = 0.0
+        let eleventhImageView = UIImageView(image: UIImage(named: "frame11.png"))
+        eleventhImageView.frame = view.frame
+        eleventhImageView.alpha = 0.0
         
-        view.insertSubview(ninthImageView, aboveSubview: imageView)
+        view.insertSubview(eleventhImageView, aboveSubview: imageView)
         
-        UIView.animateWithDuration(0.1, delay: 0.7, options: .CurveEaseOut, animations: {
-            ninthImageView.alpha = 1.0
+        UIView.animateWithDuration(0.0, delay: 0.7, options: .CurveEaseOut, animations: {
+            eleventhImageView.alpha = 1.0
             }, completion: {_ in
-                imageView.image = ninthImageView.image
-                ninthImageView.removeFromSuperview()
+                imageView.image = eleventhImageView.image
+                eleventhImageView.removeFromSuperview()
                 
         })
         
+        let twelfthImageView = UIImageView(image: UIImage(named: "frame12.png"))
+        twelfthImageView.frame = view.frame
+        twelfthImageView.alpha = 0.0
+        
+        view.insertSubview(eleventhImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 0.8, options: .CurveEaseOut, animations: {
+            twelfthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = twelfthImageView.image
+                twelfthImageView.removeFromSuperview()
+                
+        })
+        
+        let thirteenthImageView = UIImageView(image: UIImage(named: "frame13.png"))
+        thirteenthImageView.frame = view.frame
+        thirteenthImageView.alpha = 0.0
+        
+        view.insertSubview(thirteenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 0.9, options: .CurveEaseOut, animations: {
+            thirteenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = thirteenthImageView.image
+                thirteenthImageView.removeFromSuperview()
+                
+        })
+        
+        let fourteenthImageView = UIImageView(image: UIImage(named: "frame14.png"))
+        fourteenthImageView.frame = view.frame
+        fourteenthImageView.alpha = 0.0
+        
+        view.insertSubview(fourteenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 1.0, options: .CurveEaseOut, animations: {
+            fourteenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = fourteenthImageView.image
+                fourteenthImageView.removeFromSuperview()
+                
+        })
+        
+        let fifthteenthImageView = UIImageView(image: UIImage(named: "frame15.png"))
+        fifthteenthImageView.frame = view.frame
+        fifthteenthImageView.alpha = 0.0
+        
+        view.insertSubview(fifthteenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 1.1, options: .CurveEaseOut, animations: {
+            fifthteenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = fifthteenthImageView.image
+                fifthteenthImageView.removeFromSuperview()
+                
+        })
+        
+        let sixteenthImageView = UIImageView(image: UIImage(named: "frame16.png"))
+        sixteenthImageView.frame = view.frame
+        sixteenthImageView.alpha = 0.0
+        
+        view.insertSubview(sixteenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 1.2, options: .CurveEaseOut, animations: {
+            sixteenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = sixteenthImageView.image
+                sixteenthImageView.removeFromSuperview()
+                
+        })
+        
+        let seventeenthImageView = UIImageView(image: UIImage(named: "frame17.png"))
+        seventeenthImageView.frame = view.frame
+        seventeenthImageView.alpha = 0.0
+        
+        view.insertSubview(seventeenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 1.3, options: .CurveEaseOut, animations: {
+            seventeenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = seventeenthImageView.image
+                seventeenthImageView.removeFromSuperview()
+                
+        })
+        
+        let eightteenthImageView = UIImageView(image: UIImage(named: "frame18.png"))
+        eightteenthImageView.frame = view.frame
+        eightteenthImageView.alpha = 0.0
+        
+        view.insertSubview(eightteenthImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.0, delay: 1.4, options: .CurveEaseOut, animations: {
+            eightteenthImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = eightteenthImageView.image
+                eightteenthImageView.removeFromSuperview()
+                
+        })
+        
+        let twentiethImageView = UIImageView(image: UIImage(named: "frame20.png"))
+        twentiethImageView.frame = view.frame
+        twentiethImageView.alpha = 0.0
+        
+        view.insertSubview(twentiethImageView, aboveSubview: imageView)
+        
+        UIView.animateWithDuration(0.5, delay: 1.5, options: .CurveEaseOut, animations: {
+            twentiethImageView.alpha = 1.0
+            }, completion: {_ in
+                imageView.image = twentiethImageView.image
+                twentiethImageView.removeFromSuperview()
+                
+        })
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration (1.0, animations: { () -> Void in
-            self.enterBtn.alpha = 0.8
+        UIView.animateWithDuration (0.1, animations: { () -> Void in
+            self.enterBtn.alpha = 1.0
         })
     }
     
