@@ -21,6 +21,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vAU-1t-vdb" kind="showDetail" id="l0W-fP-4R6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,5 +36,60 @@
             </objects>
             <point key="canvasLocation" x="424" y="185"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Noj-BP-25H">
+            <objects>
+                <viewController id="vAU-1t-vdb" customClass="LoginViewController" customModule="FrippleSplash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CQZ-9T-jdU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ngs-7B-ebV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q1J-WO-RrD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-FR-HZV">
+                                <rect key="frame" x="250" y="46" width="100" height="100"/>
+                                <state key="normal" image="FB">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orj-qZ-tur">
+                                <rect key="frame" x="250" y="154" width="100" height="100"/>
+                                <state key="normal" image="Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-6C-LlD">
+                                <rect key="frame" x="250" y="262" width="100" height="100"/>
+                                <state key="normal" image="Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLv-ep-OWn">
+                                <rect key="frame" x="165" y="360" width="270" height="115"/>
+                                <state key="normal" image="NewbieBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.47058823529999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailBtn" destination="Yyo-6C-LlD" id="LE4-hN-kRy"/>
+                        <outlet property="facebookBtn" destination="R6K-FR-HZV" id="6Sj-4o-rwk"/>
+                        <outlet property="twitterBtn" destination="orj-qZ-tur" id="Ky2-9X-feZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVd-4z-jzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="185"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Email" width="84" height="84"/>
+        <image name="FB" width="84" height="84"/>
+        <image name="NewbieBtn" width="243" height="28"/>
+        <image name="Twitter" width="84" height="84"/>
+    </resources>
 </document>
