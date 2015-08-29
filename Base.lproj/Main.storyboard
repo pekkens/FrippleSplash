@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vAU-1t-vdb" kind="showDetail" id="l0W-fP-4R6"/>
+                                    <segue destination="vAU-1t-vdb" kind="show" id="JP2-bL-5KD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424" y="185"/>
+            <point key="canvasLocation" x="550" y="185"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Noj-BP-25H">
@@ -48,42 +48,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-FR-HZV">
-                                <rect key="frame" x="250" y="46" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-FR-HZV">
+                                <rect key="frame" x="250" y="140" width="100" height="100"/>
                                 <state key="normal" image="FB">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orj-qZ-tur">
-                                <rect key="frame" x="250" y="154" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orj-qZ-tur">
+                                <rect key="frame" x="250" y="248" width="100" height="100"/>
                                 <state key="normal" image="Twitter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-6C-LlD">
-                                <rect key="frame" x="250" y="262" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-6C-LlD">
+                                <rect key="frame" x="250" y="356" width="100" height="100"/>
                                 <state key="normal" image="Email">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLv-ep-OWn">
-                                <rect key="frame" x="165" y="360" width="270" height="115"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLv-ep-OWn">
+                                <rect key="frame" x="165" y="454" width="270" height="115"/>
                                 <state key="normal" image="NewbieBtn">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.47058823529999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="R6K-FR-HZV" secondAttribute="centerX" id="0w3-Nl-0Lw"/>
+                            <constraint firstAttribute="centerX" secondItem="orj-qZ-tur" secondAttribute="centerX" id="LYw-au-g3o"/>
+                            <constraint firstAttribute="centerX" secondItem="sLv-ep-OWn" secondAttribute="centerX" id="PA7-4L-XsE"/>
+                            <constraint firstAttribute="centerX" secondItem="Yyo-6C-LlD" secondAttribute="centerX" id="hIL-Y0-CwD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="emailBtn" destination="Yyo-6C-LlD" id="LE4-hN-kRy"/>
                         <outlet property="facebookBtn" destination="R6K-FR-HZV" id="6Sj-4o-rwk"/>
+                        <outlet property="newAccountBtn" destination="sLv-ep-OWn" id="Hkh-vf-jzz"/>
                         <outlet property="twitterBtn" destination="orj-qZ-tur" id="Ky2-9X-feZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVd-4z-jzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="185"/>
+            <point key="canvasLocation" x="1258" y="159"/>
         </scene>
     </scenes>
     <resources>
