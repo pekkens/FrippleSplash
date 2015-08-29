@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vAU-1t-vdb" kind="show" id="JP2-bL-5KD"/>
+                                    <segue destination="vAU-1t-vdb" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jjG-uk-Nh8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="185"/>
+            <point key="canvasLocation" x="473" y="159"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Noj-BP-25H">
